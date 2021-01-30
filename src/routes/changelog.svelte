@@ -87,6 +87,9 @@
     <h1>CHANGELOG</h1>
     <div>
       <ul id="logs">
+        <li class="versionHeader">January 30, 2021</li>
+        <li>Added German translation for the site available <a href="https://de.pattern.monster">here</a></li>
+        <li>Added a dropdown button to choose the language in the navbar</li>
         <li class="versionHeader">January 17, 2021</li>
         <li>Improved the performance of the home page when navigating back from the pattern page</li>
         <li>Added 2 new patterns</li>
