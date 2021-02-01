@@ -2,12 +2,15 @@ const strings = {
   searchPattern: "Nach Mustern suchen",
   pressFocus: "Drücke '/' zum Fokussieren",
   title: "SVG Muster Generator",
-  heading: "Anpassbare SVG Muster für Ihre Projekte",
-  keywords: "svg muster, muster, svg hintergründe, vektor hintergrund, muster generator, muster erstellung",
+  heading: "Anpassbare <span>SVG Muster</span> für Ihre Projekte",
+  keywords:
+    "svg muster, muster, svg hintergründe, vektor hintergrund, muster generator, muster erstellung, svg patterns, patterns, svg backgrounds, vector wallpaper, pattern generator, pattern maker",
   patterns: "Muster",
   license: "MIT Lizenz",
   free: "Kostenlos",
-  description: "Ein einfacher Online-Mustergenerator um wiederholbare SVG-Muster zu erstellen. Beschleunige Deine Website ohne Kompromisse in der Bildqualität. Perfekt für Webseiten-Hintergründe, Bekleidung, Branding, Verpackungsdesign und vieles mehr.",
+  description: "Ein einfacher Online-Mustergenerator um wiederholbare SVG-Muster zu erstellen.",
+  description2: "Beschleunige Deine Website ohne Kompromisse in der Bildqualität.",
+  description3: "Perfekt für Webseiten-Hintergründe, Bekleidung, Branding, Verpackungsdesign und vieles mehr.",
   filter: "Filter",
   sort: "Sortieren",
   filterMode: "Filtern nach Modus",
@@ -24,6 +27,7 @@ const strings = {
   changeTheme: "Thema ändern",
   changelog: "Änderungsprotokoll",
   features: "Funktionen",
+  downloads: "",
   privacy: "Datenschutzerklärung",
   privacyFull: "Diese App erfasst oder speichert keine Benutzerdaten",
   signUp: "Melde Dich für Projektupdates an und erhalte monatlich kostenlose Muster in Deinen Posteingang",
@@ -97,6 +101,6 @@ const strings = {
   stars: "Sterne",
   semicircles: "Halbkreise",
   songket: "Songket Muster",
-    };
+};
 
 export default { strings };
