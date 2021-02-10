@@ -62,7 +62,6 @@
     const response = await fetch("https://api.github.com/search/repositories?q=svelte-svg-patterns");
     const myJson = await response.json(); //extract JSON from the http response
     starsCount = myJson.items[0].stargazers_count;
-    // console.log(starsCount);
   };
 </script>
 
