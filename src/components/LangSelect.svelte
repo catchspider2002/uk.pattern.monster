@@ -8,6 +8,7 @@
   let languageList = [
     { id: "en", name: "English", link: "https://pattern.monster" },
     { id: "de", name: "Deutsch", link: "https://de.pattern.monster" },
+    { id: "pl", name: "Polski", link: "https://pl.pattern.monster" },
   ];
 
   const languageName = languageList.find(({ id }) => id === language).name;
@@ -50,7 +51,8 @@
       stroke="currentColor"
       fill="none"
       stroke-linecap="round"
-      stroke-linejoin="round">
+      stroke-linejoin="round"
+    >
       <path d="M5 7h7m-2 -2v2a5 8 0 0 1 -5 8m1 -4a7 4 0 0 0 6.7 4" />
       <path d="M11 19l4 -9l4 9m-.9 -2h-6.2" />
     </svg>
@@ -64,7 +66,8 @@
       stroke="currentColor"
       fill="none"
       stroke-linecap="round"
-      stroke-linejoin="round">
+      stroke-linejoin="round"
+    >
       <polyline points="6 9 12 15 18 9" />
     </svg>
   </button>
