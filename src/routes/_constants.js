@@ -1,3 +1,93 @@
+const strings = {
+  website: "https://pattern.monster",
+  title: "Pattern Monster",
+  description: "Ein einfacher Online-Mustergenerator um wiederholbare SVG-Muster zu erstellen.",
+  description2: "Beschleunige Deine Website ohne Kompromisse in der Bildqualität.",
+  description3: "Perfekt für Webseiten-Hintergründe, Bekleidung, Branding, Verpackungsdesign und vieles mehr.",
+  keywords:
+    "svg muster, muster, svg hintergründe, vektor hintergrund, muster generator, muster erstellung, svg patterns, patterns, svg backgrounds, vector wallpaper, pattern generator, pattern maker",
+  pages: [
+    {
+      page: "index",
+      title: "SVG Muster Generator",
+      keywords: "",
+      description: "",
+      image: "",
+    },
+    {
+      page: "changelog",
+      title: "Änderungsprotokoll",
+      keywords: "änderungsprotokoll",
+      description: "Changelog for Pattern Monster.",
+      image: "",
+    },
+    {
+      page: "downloads",
+      title: "Downloads",
+      keywords: "downloads",
+      description: "Downloads for Pattern Monster.",
+      image: "",
+    },
+    {
+      page: "features",
+      title: "Funktionen",
+      keywords: "funktionen",
+      description: "Features for Pattern Monster.",
+      image: "",
+    },
+    {
+      page: "privacy-policy",
+      title: "Datenschutzerklärung",
+      keywords: "datenschutzerklärung",
+      description: "Privacy Policy for Pattern Monster.",
+      image: "",
+    },
+  ],
+  versions: [
+    {
+      lang: "en",
+      website: "https://pattern.monster",
+    },
+    {
+      lang: "de",
+      website: "https://de.pattern.monster",
+    },
+    {
+      lang: "pl",
+      website: "https://pl.pattern.monster",
+    },
+    {
+      lang: "tr",
+      website: "https://tr.pattern.monster",
+    },
+  ],
+};
+
+const pageDetails = (page) => {
+  let pageValues =
+    strings.pages.filter((currentPage) => currentPage.page === page)[0] || strings.pages.filter((currentPage) => currentPage.page === "index")[0];
+
+  let website = strings.website;
+  let title = strings.title + " - " + strings.pages[0].title;
+  let url = website;
+  let keywords = strings.keywords;
+  let desc = strings.description + " " + strings.description3;
+  let image = pageValues.image == "" ? website + "/TwitterBG2.png" : pageValues.image;
+
+  let versions = strings.versions.map((version) => {
+    return { lang: version.lang, website: version.website + (page === "index" ? "" : "/" + page) };
+  });
+
+  if (page != "index") {
+    title = pageValues.title + " - " + strings.title + " | " + strings.pages[0].title;
+    url = website + "/" + page;
+    desc = pageValues.description + " " + strings.description + " " + strings.description3;
+    keywords = pageValues.keywords + ", " + strings.keywords;
+  }
+
+  return { title, url, keywords, desc, image, versions };
+};
+
 const randomNumber = (min, max) => Math.round(Math.random() * (max - min) + min);
 
 // const randomAngle = () => Math.floor(Math.random() * 6) * 5;
@@ -236,7 +326,7 @@ const colorPalettes = [
   [hexToHSL("#6e7f80"), hexToHSL("#536872"), hexToHSL("#708090"), hexToHSL("#536878"), hexToHSL("#36454f")],
   [hexToHSL("#4b3832"), hexToHSL("#854442"), hexToHSL("#fff4e6"), hexToHSL("#3c2f2f"), hexToHSL("#be9b7b")],
   [hexToHSL("#3b5998"), hexToHSL("#8b9dc3"), hexToHSL("#dfe3ee"), hexToHSL("#f7f7f7"), hexToHSL("#ffffff")],
-  [hexToHSL("#008744"), hexToHSL("#0057e7 "), hexToHSL("#d62d20"), hexToHSL("#ffa700"), hexToHSL("#ffffff")],
+  [hexToHSL("#008744"), hexToHSL("#0057e7"), hexToHSL("#d62d20"), hexToHSL("#ffa700"), hexToHSL("#ffffff")],
   [hexToHSL("#3385c6"), hexToHSL("#4279a3"), hexToHSL("#476c8a"), hexToHSL("#49657b"), hexToHSL("#7f8e9e")],
   [hexToHSL("#d2d4dc"), hexToHSL("#afafaf"), hexToHSL("#f8f8fa"), hexToHSL("#e5e6eb"), hexToHSL("#c0c2ce")],
   [hexToHSL("#a8e6cf"), hexToHSL("#dcedc1"), hexToHSL("#ffd3b6"), hexToHSL("#ffaaa5"), hexToHSL("#ff8b94")],
@@ -278,4 +368,4 @@ const icons = {
   cancel: "M6 6l12 12m0-12L6 18",
 };
 
-export default { randomNumber, randomAngle, randomColor, icons, hexToHSL, HSLAToHexA, colorPalettes };
+export default { randomNumber, randomAngle, randomColor, icons, hexToHSL, HSLAToHexA, colorPalettes, strings, pageDetails };
