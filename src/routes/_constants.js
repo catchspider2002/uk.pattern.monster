@@ -1,5 +1,5 @@
 const strings = {
-  website: "https://pattern.monster",
+  website: "https://de.pattern.monster",
   title: "Pattern Monster",
   description: "Ein einfacher Online-Mustergenerator um wiederholbare SVG-Muster zu erstellen.",
   description2: "Beschleunige Deine Website ohne Kompromisse in der Bildqualität.",
