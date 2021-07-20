@@ -68,6 +68,14 @@ const strings = {
       lang: "it",
       website: "https://it.pattern.monster",
     },
+    {
+      lang: "ro",
+      website: "https://ro.pattern.monster",
+    },
+    {
+      lang: "fr",
+      website: "https://fr.pattern.monster",
+    },
   ],
 };
 
