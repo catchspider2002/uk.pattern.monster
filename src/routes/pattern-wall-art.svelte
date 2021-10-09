@@ -105,7 +105,7 @@ $: selectedUnique = uniqCategories.filter((category) => category.category_id ===
         href="https://www.redbubble.com/i/{link.short_name}/{link.pattern_name.replace(
           ' ',
           '-'
-        )}-Pattern-Monster-by-catchspider2002/{link.pattern_id}.{link.category_id}"
+        )}-Pattern-Monster-by-catchspider2002/{link.pattern_id}.{link.category_id}?asc=u"
         class="col-span-2 row-span-2 md:col-start-3 md:row-start-{(i % 10) * Math.round(i / 10) + 1}"
       >
         <img src="https://ih1.redbubble.net/image.{link.image_id}/{link.image_suffix}.jpg" alt="" class="right min-h-96 transition" />
@@ -116,7 +116,7 @@ $: selectedUnique = uniqCategories.filter((category) => category.category_id ===
         href="https://www.redbubble.com/i/{link.short_name}/{link.pattern_name.replace(
           ' ',
           '-'
-        )}-Pattern-Monster-by-catchspider2002/{link.pattern_id}.{link.category_id}"
+        )}-Pattern-Monster-by-catchspider2002/{link.pattern_id}.{link.category_id}?asc=u"
         class="col-span-2 row-span-2 md:col-start-1 md:row-start-3"
       >
         <img src="https://ih1.redbubble.net/image.{link.image_id}/{link.image_suffix}.jpg" alt="" class="left rounded min-h-96 transition" />
@@ -127,7 +127,7 @@ $: selectedUnique = uniqCategories.filter((category) => category.category_id ===
         href="https://www.redbubble.com/i/{link.short_name}/{link.pattern_name.replace(
           ' ',
           '-'
-        )}-Pattern-Monster-by-catchspider2002/{link.pattern_id}.{link.category_id}"
+        )}-Pattern-Monster-by-catchspider2002/{link.pattern_id}.{link.category_id}?asc=u"
       >
         <img src="https://ih1.redbubble.net/image.{link.image_id}/{link.image_suffix}.jpg" alt="" class="min-h-48 transition" />
       </a>
