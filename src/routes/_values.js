@@ -1,5 +1,12 @@
 let changeLog = [
   {
+    date: "November 2, 2021",
+    updates: [
+      'Added 6 new patterns',
+      'Updated the Spanish translation by DraftThunder 343 amd German translation by JFK-05',
+    ],
+  },
+  {
     date: "October 20, 2021",
     updates: [
       'Added 4 new patterns',
