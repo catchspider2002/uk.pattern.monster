@@ -1,8 +1,9 @@
 let changeLog = [
   {
-    date: "November 2, 2021",
+    date: "December 14, 2021",
     updates: [
-      'Added 6 new patterns',
+      'Added 8 new patterns',
+      'Added Swedish translation by Viktor Schultz available <a href="https://sv.pattern.monster">here</a>',
       'Updated the Spanish translation by DraftThunder 343 amd German translation by JFK-05',
     ],
   },
